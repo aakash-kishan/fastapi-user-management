@@ -1,20 +1,10 @@
-# Virtual Environment
+
 .venv/
 venv/
-
-# Python
 __pycache__/
 *.pyc
 *.pyo
-
-# Database
 users.db
-
-# IDE
 .idea/
-
-# Environment Variables
 .env
-
-# Logs
 *.log
