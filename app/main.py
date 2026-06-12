@@ -7,13 +7,17 @@ from mangum import Mangum
 
 app = FastAPI(title="User Management API")
 
-handler = Mangum(app)
-
 app.include_router(user_router)
-
 
 @app.get("/")
 def home():
     return {
         "message": "User Management API Running"
     }
+
+
+print("ROUTES:")
+for route in app.routes:
+    print(route.path)
+
+handler = Mangum(app)
